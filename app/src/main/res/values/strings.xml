@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fitness Tracking App</string>
+    <string name="locate_me">Locate Me</string>
+    <string name="locate_places_on_map">Locate Places on Map</string>
+    <string name="title_activity_locate_me_maps">LocateMeMapsActivity</string>
+    <string name="title_activity_map_search">MapSearchActivity</string>
+    <string name="no_permission_text">You don\'t have permission to do this!</string>
+</resources>

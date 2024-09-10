@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FitnessTrackingActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Daily Steps"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/currentDailySteps"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/stepGoal"
+                android:layout_gravity="center_horizontal"
+                android:text="Of 6000"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp" />
+
+            <TextView
+                android:id="@+id/encouragingMessage"
+                android:layout_gravity="center_horizontal"
+                android:text="Just 5995 Steps To Go!"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_gravity="center_horizontal"
+                android:text="Long press the current steps at the end of each day to log your daily steps"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Last 7 Entries: "
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" />
+
+            <ListView
+                android:id="@+id/listStepHistory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="20dp"
+                android:layout_weight="1"
+                android:divider="#0C0C0C"
+                android:dividerHeight="3dp"
+                android:nestedScrollingEnabled="true"/>
+
+            <Button
+                android:id="@+id/stepsBackBtn"
+                android:background="@drawable/button_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Back To Main"
+                android:textSize="30sp"
+                android:textColor="#121111"
+                android:layout_gravity="center"
+                android:layout_marginVertical="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
